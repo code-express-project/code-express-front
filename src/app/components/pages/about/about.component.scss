@@ -115,3 +115,11 @@
 
 /* Min width 1600px */
 @media only screen and (min-width: 1600px) {}
+
+p {
+    line-height: 1.5; /* Espaçamento 1,5 entre linhas */
+    text-indent: 1.25cm; /* Recuo de 1,25 cm na primeira linha */
+    text-align: justify; /* Alinhamento justificado */
+    margin-right: 20px;
+}
+
