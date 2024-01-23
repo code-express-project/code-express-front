@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -8,7 +8,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class HomeOneComponent implements OnInit {
 
-    constructor() { }
+    constructor(private cdr: ChangeDetectorRef) { }
 
     ngOnInit(): void {}
 
@@ -102,6 +102,7 @@ export class HomeOneComponent implements OnInit {
             this.selectedItem.open = false;
         }
         this.selectedItem = item;
+        this.cdr.detectChanges();
     }
 
     // Tabs
