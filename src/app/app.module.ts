@@ -29,6 +29,8 @@ import { FaqComponent } from './components/pages/faq/faq.component';
 import { TermsConditionsComponent } from './components/pages/terms-conditions/terms-conditions.component';
 import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privacy-policy.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { NossosProjetosComponent } from './components/pages/nossos-projetos/nossos-projetos.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -55,14 +57,16 @@ import { ContactComponent } from './components/pages/contact/contact.component';
     FaqComponent,
     TermsConditionsComponent,
     PrivacyPolicyComponent,
-    ContactComponent
+    ContactComponent,
+    NossosProjetosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule,
-    NgxScrollTopModule
+    NgxScrollTopModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -21,6 +21,7 @@ import { FaqComponent } from './components/pages/faq/faq.component';
 import { TermsConditionsComponent } from './components/pages/terms-conditions/terms-conditions.component';
 import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privacy-policy.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { NossosProjetosComponent } from './components/pages/nossos-projetos/nossos-projetos.component';
 
 const routes: Routes = [
     {path: '', component: HomeOneComponent},
@@ -44,6 +45,7 @@ const routes: Routes = [
     {path: 'terms-condition', component: TermsConditionsComponent},
     {path: 'privacy-policy', component: PrivacyPolicyComponent},
     {path: 'contact', component: ContactComponent},
+    {path: 'nossos-projetos',component: NossosProjetosComponent},
     // Here add new pages component
 
     {path: '**', component: ErrorComponent} // This line will remain down from the whole pages component list
