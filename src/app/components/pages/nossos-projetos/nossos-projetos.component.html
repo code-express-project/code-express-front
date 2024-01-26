@@ -23,7 +23,7 @@
         <div class="section-title">
     <br>
             <h2>Caculadora de Salário CLT E PJ</h2>
-            <p>cCom essa calculadora você vai ter uma base de melhor escolha entre uma contratação CLT ou PJ vamos ter ajudar a fazer a melhor escolha na hora de escolher a modalidade de contratação.</p>
+            <p>Com essa calculadora você vai ter uma base de melhor escolha entre uma contratação CLT ou PJ vamos ter ajudar a fazer a melhor escolha na hora de escolher a modalidade de contratação.</p>
         </div>
 
         <div class="calculator-results-container">
@@ -33,19 +33,20 @@
                 <div style="display: flex; gap: 10px;">
                   <div style="flex: 1;">
                     <label for="salaryBase">Salário Base Fixo:</label>
-                    <input type="number" id="salaryBase" [(ngModel)]="salaryBase" />
+                    <input type="number" [(ngModel)]="salaryBase" class="form-control" placeholder="Valor" />
                   </div>
                   
                   <div style="flex: 1;">
                     <label for="benefitName">Nome do Benefício:</label>
-                    <input type="text" id="benefitName" [(ngModel)]="benefitName" />
+                    <input type="text" id="benefitName" [(ngModel)]="benefitName" class="form-control" placeholder="Descrição"  />
                   </div>
                   
                   <div style="flex: 1;">
                     <label for="benefitValue">Valor do Benefício:</label>
-                    <input type="number" id="benefitValue" [(ngModel)]="benefitValue" />
+                    <input type="number" id="benefitValue" [(ngModel)]="benefitValue"  class="form-control" placeholder="Valor"  />
                   </div>
                 </div>
+                
                 <button (click)="addBenefit()">Adicionar Benefício</button>
                 <ul>
                   <li *ngFor="let benefit of benefitsList">
@@ -73,17 +74,17 @@
                 <div style="display: flex; gap: 10px;">
                   <div style="flex: 1;">
                     <label for="salaryBasePj">Salário Base Fixo:</label>
-                    <input type="number" id="salaryBasePj" [(ngModel)]="salaryBasePj" />
+                    <input type="number" id="salaryBasePj" [(ngModel)]="salaryBasePj" class="form-control" placeholder="Valor" />
                   </div>
                   
                   <div style="flex: 1;">
                     <label for="benefitNamePj">Nome do Benefício:</label>
-                    <input type="text" id="benefitNamePj" [(ngModel)]="benefitNamePj" />
+                    <input type="text" id="benefitNamePj" [(ngModel)]="benefitNamePj" class="form-control" placeholder="Descrição" />
                   </div>
                   
                   <div style="flex: 1;">
                     <label for="benefitValuePj">Valor do Benefício:</label>
-                    <input type="number" id="benefitValuePj" [(ngModel)]="benefitValuePj" />
+                    <input type="number" id="benefitValuePj" [(ngModel)]="benefitValuePj" class="form-control" placeholder="Valor"/>
                   </div>
                 </div>
 

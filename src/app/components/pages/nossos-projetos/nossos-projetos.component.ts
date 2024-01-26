@@ -1,6 +1,7 @@
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { Component, HostListener, Injectable, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-nossos-projetos',
   templateUrl: './nossos-projetos.component.html',
@@ -9,10 +10,10 @@ import { Component, HostListener, Injectable, OnInit } from '@angular/core';
 })
 export class NossosProjetosComponent implements OnInit {
   
-salaryBase: number = 0;
-novocampo: number = 0 ;
+salaryBase: number ;
+novocampo: number = 0;
 benefitName: string = ""; // Novo campo para o nome do benefício
-benefitValue: number = 0; // Novo campo para o valor do benefício
+benefitValue: number; // Novo campo para o valor do benefício
 benefitsList: { name: string, value: number }[] = [];
 
 totalSalary: number = 0;
@@ -22,10 +23,10 @@ netSalary: number = 0;
 
 //BASE PJ
 
-salaryBasePj: number = 0;
+salaryBasePj: number  ;
 novocampoPj: number = 0 ;
 benefitNamePj: string = ""; // Novo campo para o nome do benefício
-benefitValuePj: number = 0; // Novo campo para o valor do benefício
+benefitValuePj: number ; // Novo campo para o valor do benefício
 benefitsListPj: { namePj: string, valuePj: number }[] = [];
 
   totalSalaryPj: number = 0;
