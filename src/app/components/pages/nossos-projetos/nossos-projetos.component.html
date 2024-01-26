@@ -59,10 +59,37 @@
           
             <div class="results-container">
               <h2>Resultados:</h2>
-              <p>Salário Total: R$ {{ totalSalary | number: '1.2-2' }}</p>
-              <p>Desconto INSS: R$ {{ inss | number: '1.2-2' }}</p>
-              <p>Desconto IRRF: R$ {{ irrf | number: '1.2-2' }}</p>
-              <p>Salário Líquido: R$ {{ netSalary | number: '1.2-2' }}</p>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col">Valor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Salário Bruto (Com Benefícios) :</td>
+                    <td>R$ {{ totalSalary | number: '1.2-2' }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Desconto INSS : </td>
+                    <td>R$ {{ inss | number: '1.2-2' }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Desconto IRRF :</td>
+                    <td>R$ {{ irrf | number: '1.2-2' }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Salário Líquido (Com Descontos) :</td>
+                    <td>R$ {{ netSalary | number: '1.2-2' }}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div> 
           <br>
@@ -100,14 +127,53 @@
             </div>
           
             <div class="results-container">
-              <h2>Resultados:</h2>
-              <p>Salário Total: R$ {{ totalSalaryPj | number: '1.2-2' }}</p>
-              <p>Desconto Imposto de Renda : R$ {{ irpj | number: '1.2-2' }}</p>
-              <p>Desconto Contribuição Social sobre o Lucro Liquido: R$ {{ csll | number: '1.2-2' }}</p>
-              <p>Desconto PIS: R$ {{ pis | number: '1.2-2' }}</p>
-              <p>Desconto CONFINS: R$ {{ confins | number: '1.2-2' }}</p>
-              <p>Desconto INSS: R$ {{ inssPj | number: '1.2-2' }}</p>
-              <p>Salário Líquido: R$ {{ netSalaryPj | number: '1.2-2' }}</p>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col">Valor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Salário Bruto (Com Benefícios) :</td>
+                    <td>R$ {{ totalSalaryPj | number: '1.2-2' }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Desconto Imposto de Renda : </td>
+                    <td>R$ {{ irpj | number: '1.2-2' }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Desconto Contribuição Social sobre o Lucro Liquido :</td>
+                    <td>R$ {{ csll | number: '1.2-2' }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td> Desconto PIS: </td>
+                    <td>R$ {{ pis | number: '1.2-2' }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td> Desconto CONFINS: </td>
+                    <td>R$ {{ confins | number: '1.2-2' }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td> Desconto INSS: </td>
+                    <td>R$ {{ inssPj | number: '1.2-2' }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td> Salário Líquido (Com descontos):  </td>
+                    <td>R$ {{ netSalaryPj| number: '1.2-2' }}</td>
+                  </tr>
+                </tbody>
+              </table>
+
             </div>
           </div> 
         </div>
