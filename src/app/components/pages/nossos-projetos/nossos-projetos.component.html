@@ -1,0 +1,114 @@
+<div class="page-title-area">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>Nossos Projetos</h2>
+            <ul>
+                <li><a routerLink="/">Home </a></li>
+                <li class="active">Nossos Projetos</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-shape">
+        <div class="shape1"><img src="assets/images/shape/1.png" alt="shape" /></div>
+        <div class="shape3"><img src="assets/images/shape/3.png" alt="shape" /></div>
+        <div class="shape4"><img src="assets/images/shape/4.png" alt="shape" /></div>
+        <div class="shape5"><img src="assets/images/shape/5.png" alt="shape" /></div>
+        <div class="shape6"><img src="assets/images/shape/6.png" alt="shape" /></div>
+    </div>
+</div>
+
+<section class="home-contact-area home-2-contact pb-100">
+    <div class="container">
+        <div class="section-title">
+    <br>
+            <h2>Caculadora de Salário CLT E PJ</h2>
+            <p>cCom essa calculadora você vai ter uma base de melhor escolha entre uma contratação CLT ou PJ vamos ter ajudar a fazer a melhor escolha na hora de escolher a modalidade de contratação.</p>
+        </div>
+
+        <div class="calculator-results-container">
+            <div class="calculator-container">
+              <h1>Calculadora de Salário CLT</h1>
+              <div class="form-container">
+                <div style="display: flex; gap: 10px;">
+                  <div style="flex: 1;">
+                    <label for="salaryBase">Salário Base Fixo:</label>
+                    <input type="number" id="salaryBase" [(ngModel)]="salaryBase" />
+                  </div>
+                  
+                  <div style="flex: 1;">
+                    <label for="benefitName">Nome do Benefício:</label>
+                    <input type="text" id="benefitName" [(ngModel)]="benefitName" />
+                  </div>
+                  
+                  <div style="flex: 1;">
+                    <label for="benefitValue">Valor do Benefício:</label>
+                    <input type="number" id="benefitValue" [(ngModel)]="benefitValue" />
+                  </div>
+                </div>
+                <button (click)="addBenefit()">Adicionar Benefício</button>
+                <ul>
+                  <li *ngFor="let benefit of benefitsList">
+                    <strong>{{ benefit.name }}:</strong> R$ {{ benefit.value | number: '1.2-2' }}
+                  </li>
+                </ul>
+              </div>
+              <button (click)="calculateSalary()">Calcular</button>
+            </div>
+          
+            <div class="results-container">
+              <h2>Resultados:</h2>
+              <p>Salário Total: R$ {{ totalSalary | number: '1.2-2' }}</p>
+              <p>Desconto INSS: R$ {{ inss | number: '1.2-2' }}</p>
+              <p>Desconto IRRF: R$ {{ irrf | number: '1.2-2' }}</p>
+              <p>Salário Líquido: R$ {{ netSalary | number: '1.2-2' }}</p>
+            </div>
+          </div> 
+          <br>
+
+          <div class="calculator-results-container">
+            <div class="calculator-container">
+              <h1>Calculadora de Salário PJ</h1>
+              <div class="form-container">
+                <div style="display: flex; gap: 10px;">
+                  <div style="flex: 1;">
+                    <label for="salaryBasePj">Salário Base Fixo:</label>
+                    <input type="number" id="salaryBasePj" [(ngModel)]="salaryBasePj" />
+                  </div>
+                  
+                  <div style="flex: 1;">
+                    <label for="benefitNamePj">Nome do Benefício:</label>
+                    <input type="text" id="benefitNamePj" [(ngModel)]="benefitNamePj" />
+                  </div>
+                  
+                  <div style="flex: 1;">
+                    <label for="benefitValuePj">Valor do Benefício:</label>
+                    <input type="number" id="benefitValuePj" [(ngModel)]="benefitValuePj" />
+                  </div>
+                </div>
+
+                <button (click)="addBenefitPj()">Adicionar Benefício</button>
+
+                <ul>
+                  <li *ngFor="let benefitPj of benefitsListPj">
+                    <strong>{{ benefitPj.namePj }}:</strong> R$ {{ benefitPj.valuePj | number: '1.2-2' }}
+                  </li>
+                </ul>
+              </div>
+              <button (click)="calculateSalaryPj()">Calcular</button>
+            </div>
+          
+            <div class="results-container">
+              <h2>Resultados:</h2>
+              <p>Salário Total: R$ {{ totalSalaryPj | number: '1.2-2' }}</p>
+              <p>Desconto Imposto de Renda : R$ {{ irpj | number: '1.2-2' }}</p>
+              <p>Desconto Contribuição Social sobre o Lucro Liquido: R$ {{ csll | number: '1.2-2' }}</p>
+              <p>Desconto PIS: R$ {{ pis | number: '1.2-2' }}</p>
+              <p>Desconto CONFINS: R$ {{ confins | number: '1.2-2' }}</p>
+              <p>Desconto INSS: R$ {{ inssPj | number: '1.2-2' }}</p>
+              <p>Salário Líquido: R$ {{ netSalaryPj | number: '1.2-2' }}</p>
+            </div>
+          </div> 
+        </div>
+</section>
+
