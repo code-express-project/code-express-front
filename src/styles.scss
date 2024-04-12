@@ -286,8 +286,8 @@ Go Top Style*/
 /** Section tittle Css **/
 .section-title {
     position: relative;
-    max-width: 695px;
-    margin: -8px auto 60px;
+    max-width: 90%;
+    margin: 0px 50px 20px;
     text-align: center;
     span {
         color: var(--mainColor);
@@ -301,6 +301,9 @@ Go Top Style*/
         text-transform: capitalize;
         color: var(--headingColor);
         margin-bottom: 20px;
+    }
+    p{
+        text-align: justify;
     }
 }
 
@@ -1180,6 +1183,7 @@ Service Area Css
     z-index: 1;
     overflow: hidden;
     box-shadow: var(--boxShadow);
+    
     .service-img {
         margin-bottom: 20px;
         img {
@@ -1193,6 +1197,7 @@ Service Area Css
         }
         p {
             margin-bottom: 10px;
+            text-align: justify;
         }
     }
     &::before {
@@ -1235,6 +1240,34 @@ Service Area Css
             .line-bnt {
                 color: var(--whiteColor);
             }
+        }
+    }
+}
+
+.container-single-service{
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: var(--transition);
+    border-radius: var(--borderRadius);
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: var(--boxShadow);
+    margin: 34% 0px 0px;
+
+    .single-service-1{
+        position: relative;
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 30px;
+        transition: var(--transition);
+        border-radius: var(--borderRadius);
+        z-index: 1;
+        overflow: hidden;
+        box-shadow: var(--boxShadow); 
+        p {
+            text-align: justify;
         }
     }
 }
@@ -5074,6 +5107,7 @@ Services Detalhes Area Style
     .services-details-text {
         h2 {
             font-size: 35px;
+            text-align: center;
         }
     }
 }

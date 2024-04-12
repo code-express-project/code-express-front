@@ -1,10 +1,10 @@
 <div class="page-title-area">
     <div class="container">
         <div class="page-title-content">
-            <h2>Soluções Detalhes</h2>
+            <h2>Clientes</h2>
             <ul>
                 <li><a routerLink="/">Home </a></li>
-                <li class="active">Soluções Detalhes</li>
+                <li class="active">Clientes</li>
             </ul>
         </div>
     </div>
@@ -21,29 +21,28 @@
 <section class="services-details-area ptb-100">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
-                <div class="services-img mb">
-                    <img src="assets/images/solutions-details/1.png" alt="Image">
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="services-img mb">
-                    <img src="assets/images/solutions-details/2.png" alt="Image">
-                </div>
-            </div>
-
             <div class="col-12">
                 <div class="services-details-text">
-                    <h2>Gerenciamento de TI
+                    <h2>Nossos Clientes: O Que Dizem Sobre Nós
 </h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum  not only five centuries, but also the leap into.</p>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a dictionary of over 200 Latin words, combined with a</p>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc generators on the Internet tend to repeat predefined chunks as necessary, making this the first generator dictionary of over 200 Latin words, combined with a.</p>
+                    <p>Bem-vindo à nossa página de depoimentos, onde os nossos clientes compartilham as suas experiências conosco. Aqui, você encontrará uma 
+                        coleção de feedbacks sinceros e testemunhos inspiradores que destacam o impacto positivo que tivemos em seus negócios.
+                        Estamos orgulhosos de cada cliente que confiou em nós para fornecer soluções tecnológicas excepcionais e estamos gratos por sua confiança
+                         contínua. Suas palavras nos motivam a alcançar novos patamares de excelência e nos lembram do propósito por trás de tudo o que 
+                        fazemos: tornar a vida dos nossos clientes mais fácil, eficiente e bem-sucedida.Cada depoimento que você encontrar aqui é uma prova do nosso
+                         compromisso em oferecer serviços de alta qualidade, suporte excepcional e resultados tangíveis. Essas são as vozes reais de clientes satisfeitos,
+                         que experimentaram em primeira mão o valor que adicionamos aos seus negócios.Se você está pensando em se juntar à nossa família de clientes
+                         satisfeitos, esperamos que esses depoimentos o ajudem a tomar uma decisão informada. Estamos aqui para ajudá-lo a alcançar seus objetivos e estamos
+                         ansiosos para fazer parte do seu sucesso.Se você já é nosso cliente, gostaríamos de agradecer pelo seu apoio contínuo e pela oportunidade de trabalhar ao
+                         seu lado. Se você ainda não é cliente, esperamos ter a oportunidade de ajudá-lo em breve e de adicionar o seu depoimento a esta página.
+                        Obrigado por confiar na nossa equipe. Estamos comprometidos em superar suas expectativas e em sermos dignos da sua confiança, hoje e sempre.
+                        Se você deseja deixar seu próprio depoimento, entre em contato conosco. Estamos ansiosos para ouvir sua história e compartilhá-la com o mundo.
+                        </p>
+                   
                 </div>
             </div>
         </div>
-
+<!--
         <div class="scrives-item-2 mt-4 ">
             <div class="row align-items-center">
                 <div class="col-lg-4">
@@ -58,7 +57,8 @@
                 </div>
             </div>
         </div>
-
+        -->
+<!--
         <div class="scrives-item-3 mt-4">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-sm-6">
@@ -79,5 +79,54 @@
                 </div>
             </div>
         </div>
+        -->
     </div>
+</section>
+
+<section class="client-area ptb-100 bg-color">
+    <div class="container">
+        <div class="section-title">
+            <span>Depoimentos</span>
+            <h2>O que Nossos Clientes Dizem</h2>
+         
+        </div>
+        
+        <div class="client-wrap">
+            <owl-carousel-o [options]="clientWra">
+                <ng-template carouselSlide>
+                    <div class="single-client">
+                        <img src="assets/images/client/primeburgue.jpg" alt="img">
+                        <p>A Code Express de Tecnologia superou todas as minhas expectativas! Equipe competente, 
+                            atendimento personalizado e resultados surpreendentes. Parabéns pelo excelente trabalho!</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-client">
+                        <img src="assets/images/client/italianpizza.jpg" alt="img">
+                        <p>Estou muito impressionado com o trabalho da Code Express de Tecnologia
+                            Profissionalismo excepcional, entrega rápida e soluções de alta qualidade. 
+                            Recomendo totalmente</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-client">
+                        <img src="assets/images/client/julianamodas.jpg" alt="img">
+                        <p>
+                            Confio na Code Express de Tecnologia para todos os meus projetos. Profissionalismo exemplar,
+                             compromisso com a excelência e resultados que superam as expectativas. Simplesmente fantástico</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-client">
+                        <img src="assets/images/client/acai.jpg" alt="img">
+                        <p> A Code Express de Tecnologia é simplesmente incrível! Sempre entregam projetos 
+                            impecáveis, com inovação e eficiência. Estou extremamente satisfeito com os serviços prestados.
+                             Recomendo a todos!</p>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+        
+    </div>
+    
 </section>
