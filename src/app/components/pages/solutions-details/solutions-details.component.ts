@@ -7,6 +7,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./solutions-details.component.scss']
 })
 export class SolutionsDetailsComponent implements OnInit {
+	
 
   constructor() { }
 

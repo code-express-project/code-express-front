@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -66,7 +66,8 @@ import { FormsModule } from '@angular/forms';
     CarouselModule,
     BrowserAnimationsModule,
     NgxScrollTopModule,
-    FormsModule
+    FormsModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

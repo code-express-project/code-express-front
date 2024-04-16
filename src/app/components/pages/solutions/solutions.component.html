@@ -42,30 +42,31 @@
 
             <div class="col-lg-4 col-sm-6">
                 <div class="container-single-service">
-                    <div class="single-service-1" >
-                        <p>Desenvolvimento de Sofware personalizado</p>
+                    <div class="single-service-1" (click)="toggleText('desenvolvimento')">
+                        <p>Desenvolvimento de Sofware personalizado</p> <i class="pi pi-circle-fill"></i>
+                        
                     </div>
-                    <div class="single-service-1" >
-                        <p>Manutenção e suporte TI</p>
+                    <div class="single-service-1" (click)="toggleText('manutencao')">
+                        <p>Manutenção e suporte TI</p><i class="pi pi-circle-fill"></i>
                     </div>
-                    <div class="single-service-1" >
-                        <p>Desenvolvimento de Sites</p>
+                    <div class="single-service-1"(click)="toggleText('sites')" >
+                        <p>Desenvolvimento de Sites</p>  <i class="pi pi-circle-fill"></i>
                     </div>
-                    <div class="single-service-1" >
-                        <p>Criação de Logos</p>
+                    <div class="single-service-1" (click)="toggleText('logo')">
+                        <p>Criação de Logos</p> <i class="pi pi-circle-fill"></i>
                     </div>
 
                     
                 </div>
             </div>
 
-            <div class="col-lg-8 col-sm-6">
+            <div class="col-lg-8 col-sm-6" *ngIf="showDesenvolvimentoText">
                 <div class="single-service">
                     <div class="service-img">
                         <img src="assets/images/service/s1.png" alt="service" />
                     </div>
 
-                    <div class="service-content">
+                    <div class="service-content"  >
                         <h3>Desenvolvimento de Software Personalizado para o Seu Site: A Solução Sob Medida</h3>
                         <p>
                             Em um mundo digitalmente interconectado, a presença online é vital para o sucesso 
@@ -93,6 +94,122 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-lg-8 col-sm-6" *ngIf="showManutencaoText">
+                <div class="single-service">
+                    <div class="service-img">
+                        <img src="assets/images/service/s2.png" alt="service" />
+                    </div>
+
+                    <div class="service-content"  >
+                        <h3>Manutenção e Suporte de TI Personalizado para Sua Empresa: Garantindo o Funcionamento Suave e Eficiente</h3>
+                        <p>
+                            Na era digital em que vivemos, a tecnologia desempenha um papel fundamental no funcionamento 
+                            de qualquer empresa. Para garantir que sua empresa opere de forma suave e eficiente, é essencial 
+                            investir em serviços de manutenção e suporte de TI confiáveis e personalizados.
+                            Na nossa empresa, entendemos a importância crítica da tecnologia para o seu negócio. 
+                            É por isso que oferecemos serviços de manutenção e suporte de TI projetados sob medida para atender 
+                            às necessidades específicas da sua empresa. Nossa equipe de especialistas está aqui para garantir que 
+                            sua infraestrutura de TI funcione sem problemas, permitindo que você se concentre no crescimento e no sucesso do seu negócio.
+                            Nossos serviços abrangem uma variedade de áreas-chave, incluindo monitoramento proativo de sistemas, atualizações regulares de 
+                            software, backup e recuperação de dados, segurança cibernética e muito mais. Estamos comprometidos em garantir que sua infraestrutura 
+                            de TI esteja sempre protegida, atualizada e pronta para enfrentar os desafios do mundo digital em constante mudança.
+                            Além disso, reconhecemos que cada empresa é única, com necessidades e requisitos específicos. É por isso que oferecemos soluções personalizadas 
+                            que são adaptadas às suas metas e objetivos empresariais. Nossa abordagem centrada no cliente garante que você receba o mais alto nível de serviço e 
+                            suporte em todos os momentos.
+                            Com nossa equipe cuidando da manutenção e suporte de TI da sua empresa, você pode ter total confiança de que seus sistemas estão em boas mãos. 
+                            Permita-nos cuidar da parte técnica para que você possa se concentrar em administrar e expandir o seu negócio com confiança.
+                            Entre em contato conosco hoje mesmo para descobrir como nossos serviços de manutenção e suporte de TI personalizados podem beneficiar a sua empresa. 
+                            Estamos aqui para ajudar a impulsionar o sucesso do seu negócio por meio da tecnologia.
+
+                        
+                        </p>
+                        <!--
+                        <a routerLink="/solutions-details" class="line-bnt"
+                            >Read More</a
+                        >-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-sm-6" *ngIf="showSitesText">
+                <div class="single-service">
+                    <div class="service-img">
+                        <img src="assets/images/service/s3.png" alt="service" />
+                    </div>
+
+                    <div class="service-content"  >
+                        <h3>Desenvolvimento de Sites Personalizados para Sua Empresa: Refletindo a Essência da Sua Marca</h3>
+                        <p>
+                            Na era digital em que vivemos, um site é a porta de entrada para a sua empresa no mundo online. É a primeira 
+                            impressão que os clientes em potencial têm do seu negócio e, como tal, é crucial que esse primeiro contato 
+                            seja impactante, envolvente e representativo da sua marca.Na nossa empresa, entendemos a importância fundamental
+                            de um site bem projetado e otimizado para as necessidades específicas da sua empresa. É por isso que oferecemos 
+                            serviços de desenvolvimento de sites personalizados, que não apenas impressionam visualmente, mas também oferecem 
+                            uma experiência de usuário excepcional.Seja um site institucional que conta a história da sua empresa, um e-commerce 
+                            que apresenta os seus produtos de forma atraente, ou um portal informativo que mantém os clientes atualizados sobre as 
+                            novidades do seu setor, estamos aqui para transformar a sua visão em realidade.Nossa equipe de designers e desenvolvedores 
+                            experientes trabalhará em estreita colaboração com você para entender as suas necessidades, objetivos e valores da marca. 
+                            A partir daí, criaremos um site que não apenas atenda às suas expectativas, mas que também transmita a essência única da 
+                            sua empresa. Além disso, garantimos que o seu site seja totalmente responsivo e otimizado para dispositivos móveis, garantindo 
+                            uma experiência perfeita em todos os dispositivos. Isso não só melhora a satisfação do usuário, mas também melhora o seu ranking
+                             nos mecanismos de busca, aumentando a visibilidade e o alcance da sua marca.
+                            Com anos de experiência e um histórico comprovado de sucesso, podemos ajudar a levar a sua presença online para o próximo nível. 
+                            Deixe-nos cuidar do desenvolvimento do seu site para que você possa se concentrar no que faz de melhor: administrar e expandir o seu negócio.
+                            Entre em contato conosco hoje mesmo para discutir suas necessidades de desenvolvimento de site e descobrir como podemos ajudar a impulsionar 
+                            o sucesso da sua empresa no mundo digital. Estamos ansiosos para trabalhar com você e transformar sua visão em realidade.
+
+                        
+                        </p>
+                        <!--
+                        <a routerLink="/solutions-details" class="line-bnt"
+                            >Read More</a
+                        >-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-sm-6" *ngIf="showLogoText">
+                <div class="single-service">
+                    <div class="service-img">
+                        <img src="assets/images/service/s4.png" alt="service" />
+                    </div>
+
+                    <div class="service-content"  >
+                        <h3>Criação de Logo Personalizada para Sua Empresa: A Identidade Visual que Define sua Marca</h3>
+                        <p>
+                            Sua logo é mais do que apenas uma imagem; é a representação visual da identidade e dos valores da sua empresa. É a primeira coisa 
+                            que os clientes veem e a lembrança que fica na mente deles. Na nossa empresa, entendemos a importância crítica de uma logo única e 
+                            impactante, e estamos aqui para criar uma que ressoe com a essência da sua marca.Nossa equipe de designers talentosos e experientes 
+                            trabalha em estreita colaboração com você para entender a sua visão, missão e valores fundamentais. A partir daí, utilizamos nossa 
+                            expertise em design e branding para criar uma logo que não apenas impressiona visualmente, mas também comunica sua mensagem de forma eficaz.
+                            Cada aspecto da sua logo é cuidadosamente considerado, desde a escolha das cores e fontes até a seleção dos elementos visuais. Nosso objetivo
+                            é criar uma logo que seja memorável, versátil e relevante para o seu público-alvo.Além disso, garantimos que sua logo seja facilmente aplicável
+                            em uma variedade de contextos, seja em papelaria corporativa, embalagens de produtos, material de marketing ou digitalmente em seu site e mídias sociais. 
+                            Isso garante consistência em sua identidade visual e ajuda a fortalecer o reconhecimento da marca.Com nossa abordagem centrada no cliente e compromisso
+                            com a excelência em design, podemos ajudar a sua empresa a se destacar em um mercado competitivo. Deixe-nos cuidar da criação da sua logo para que você 
+                            possa se concentrar em administrar e expandir o seu negócio.Entre em contato conosco hoje mesmo para discutir suas ideias e requisitos de design de logo. 
+                            Estamos ansiosos para colaborar com você e criar uma logo que seja verdadeiramente digna da sua marca
+
+
+                        
+                        </p>
+                        <!--
+                        <a routerLink="/solutions-details" class="line-bnt"
+                            >Read More</a
+                        >-->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
             <!--
             <div class="col-lg-4 col-sm-6">
                 <div class="single-service">
